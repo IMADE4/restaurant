@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="header">
+        <h1>User Dashboard</h1>
+        <a href="index.html">Home</a>
+    </div>
+    <div class="content">
+        <h2>Order Food</h2>
+        <form id="orderForm">
+            <div class="dish">
+                <img src="./images/spaghetti_carbonara.jpg" alt="Dish 1" class="dish-img">
+                <label for="dish1">spaghetti:</label>
+                <input type="number" id="dish1" name="dish1" value="0" min="0">
+                <span class="price">$10 each</span>
+            </div>
+            <div class="dish">
+                <img src="./images/curryimg.jpg" alt="Dish 2" class="dish-img">
+                <label for="dish2">curryimg:</label>
+                <input type="number" id="dish2" name="dish2" value="0" min="0">
+                <span class="price">$15 each</span>
+            </div>
+            <div class="dish">
+                <img src="./images/caesar_salad.jpg" alt="Dish 3" class="dish-img">
+                <label for="dish3">salad:</label>
+                <input type="number" id="dish3" name="dish3" value="0" min="0">
+                <span class="price">$20 each</span>
+            </div>
+            <button type="submit">Place Order</button>
+        </form>
+        <h2>Your Orders</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>User</th>
+                    <th>Items</th>
+                    <th>Total</th>
+                    <th>Date</th>
+                </tr>
+            </thead>
+            <tbody id="userOrderTable">
+                <!-- Orders will be populated here by JavaScript -->
+            </tbody>
+        </table>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

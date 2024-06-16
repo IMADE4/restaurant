@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Admin Dashboard</h1>
+        <a href="index.html">Home</a>
+    </div>
+    <div class="content">
+        <h2>All Users</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Username</th>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody id="adminUserTable">
+                <!-- Users will be populated here by JavaScript -->
+            </tbody>
+        </table>
+
+        <h2>All Orders</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>User</th>
+                    <th>Items</th>
+                    <th>Total</th>
+                    <th>Date</th>
+                </tr>
+            </thead>
+            <tbody id="adminOrderTable">
+                <!-- Orders will be populated here by JavaScript -->
+            </tbody>
+        </table>
+
+        <h2>Manage Menu</h2>
+        <form id="menuForm">
+            <input type="text" id="menuItem" placeholder="Add new menu item" required>
+            <button type="submit">Add</button>
+        </form>
+        <table>
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="menuTable">
+                <!-- Menu items will be populated here by JavaScript -->
+            </tbody>
+        </table>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
